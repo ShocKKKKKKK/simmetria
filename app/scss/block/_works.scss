@@ -1,0 +1,34 @@
+.works {
+  padding: 50px 0 67px;
+
+  background: url('../img/bg/bg-works.png') bottom 85px right no-repeat;
+
+  &__inner {
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    padding: 20px 38px;
+    box-shadow: 0 15px 20px rgba(221, 68, 0, 0.15);
+    border-radius: 26px;
+    border: 1px solid #f58345;
+    background-color: #ffffff;
+    color: #58585a;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.link-btn {}
