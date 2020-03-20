@@ -1,0 +1,138 @@
+.benefits {
+  position: relative;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 -77px;
+  }
+
+  &__left,
+  &__right {
+    flex: 0 1 50%;
+    margin-top: 52px;
+  }
+
+  &__title {
+    color: #58585a;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+
+    &-text {
+      font-weight: 900;
+      display: block;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 51px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #f58345;
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    // margin: 0 -35px;
+  }
+
+  &__item {
+    flex: 0 1 calc(50% - 70px);
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 35px 20px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+  }
+
+  &__img {}
+
+  &__info {}
+
+  &__caption {
+    max-width: 157px;
+    color: #58585a;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    max-width: 150px;
+    color: #999999;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__right {
+    margin-right: -76px;
+
+    &-caption {
+      color: #ffffff;
+      font-family: Rubik;
+      font-size: 22px;
+      font-weight: 700;
+      padding-left: 68px;
+      position: relative;
+      margin-bottom: 24px;
+
+      span {
+        display: block;
+        color: #ffffff;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 7px;
+
+        +span {
+          color: #f5cd45;
+          font-family: Rubik;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+        }
+      }
+
+      &::before {
+        content: '“';
+        position: absolute;
+        display: block;
+        top: -16px;
+        left: 0;
+        color: #f5b545;
+        font-family: Georgia;
+        font-size: 100px;
+        font-weight: 700;
+      }
+    }
+    &-text {
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to top, #f58345 0%, #f5a845 100%);
+    z-index: -1;
+  }
+}
